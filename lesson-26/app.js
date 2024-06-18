@@ -99,8 +99,8 @@ app.use((req, res, next) => {
 const mongoose = require("mongoose"); // mongoose를 요청
 
 // 데이터베이스 연결 설정
-// 데이터베이스 연결 설정
-mongoose.connect("mongodb+srv://jhw030306:1234*@ut-node.pzxaori.mongodb.net/?retryWrites=true&w=majority&appName=UT-Node", {
+mongoose.connect(
+  "mongodb+srv://jhw030306:1234*@ut-node.pzxaori.mongodb.net/?retryWrites=true&w=majority&appName=UT-Node", {
 });
 
 const db = mongoose.connection;
